@@ -1,0 +1,35 @@
+body {
+  background: rgb(218, 238, 154);
+}
+form {
+  border: 20px solid yellow;
+  background: grey;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+form:hover {
+  background: rgb(184, 181, 181);
+  border-color: green;
+}
+.hidden {
+  opacity: 0;
+}
+.hidden2 {
+  opacity: 0;
+}
+.btn {
+  border-radius: 0;
+  padding: 12px 24px;
+  background-color: green;
+  color: white;
+  transition: all 0.4s ease;
+}
+.btn:hover {
+  border-radius: 20px;
+  color: green;
+  background: white;
+  border-color: green;
+}

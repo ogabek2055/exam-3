@@ -1,11 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Rent Car</title>
+  </head>
+  <body>
+    <center>
+      <h1>Price: <span id="price">0</span> ming som</h1>
+      <h2>Pizza order</h2>
+      <form>
+        <label for="username">
+          <input type="text" placeholder="User Name" required />
+        </label>
+        <br />
+        <label for="username">
+          <input type="number" placeholder="Phone Number" required />
+        </label>
+        <br />
+        <label for="username">
+          <input type="email" placeholder="Pistonchi@gmail.com" required />
+        </label>
+        <br />
+        <label for="carSelect">Dough Thickness:</label><br />
+        <select id="carSelect" onchange="getPrice()">
+          <option value="none">none</option>
+          <option value="thin">Thin 20sm</option>
+          <option value="medium">Medium 25sm</option>
+          <option value="thick">Thick 30sm</option>
+        </select>
+        <br />
+        <br />
+        <label for="days">
+          <input
+            type="number"
+            placeholder="Double or Tripple"
+            id="days"
+            value="1"
+            onchange="getPrice()"
+          />
+        </label>
+        <br />
+        <h3>On Pizza:</h3>
+        <label for="turkey">
+          <input id="turkey" type="checkbox" onchange="getPrice()" />
+          Turkey
+        </label>
+        <!-- <span class="hidden">prol</span> -->
+        <label for="mushroom">
+          <input id="mushroom" type="checkbox" onchange="getPrice()" />
+          Mushroom
+        </label>
+        <br>
+        <h3>Add to pizza</h3>
+        <label for="pepper">
+          <input id="pepper" type="checkbox" onchange="getPrice()" />
+          Pepper
+        </label>
+        <label for="sousage">
+          <input id="sousage" type="checkbox" onchange="getPrice()" />
+          Sousage
+        </label>
+        <!-- <span class="hidden">probeeel</span> -->
+        <label for="tomato">
+          <input id="tomato" type="checkbox" onchange="getPrice()" />
+          Tomato
+        </label>
+        <!-- <span class="hidden">prol</span> -->
+        <label for="cucember">
+          <input id="cucember" type="checkbox" onchange="getPrice()" />
+          Cucember
+        </label>
+
+        <label class="hidden2" for="auto">
+          <input
+            type="radio"
+            name="transfer"
+            id="auto"
+            value="auto"
+            checked
+            onchange="getPrice()"
+          />
+          Auto
+        </label>
+        <label class="hidden2" for="mechanic">
+          <input
+            type="radio"
+            name="transfer"
+            id="mechanic"
+            value="mech"
+            onchange="getPrice()"
+          />
+          Mechanic
+        </label>
+        <button onclick="clicker()" class="btn">Order Now</button>
+      </form>
+    </center>
+
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
