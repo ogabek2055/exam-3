@@ -1,4 +1,4 @@
-const carPrices = {
+const pizzaPrices = {
   none: {
     auto: 0,
     mech: 0,
@@ -35,7 +35,7 @@ function getPrice() {
   const hasTurkey = document.getElementById("turkey").checked ? 8 : 0;
   const daysPrice =
     +document.getElementById("days").value *
-    carPrices[brandSelect.value][transferType];
+    pizzaPrices[brandSelect.value][transferType];
 
   price +=
     daysPrice +
@@ -46,10 +46,12 @@ function getPrice() {
     hasMushrooms +
     hasTurkey;
   priceEl.innerHTML = price;
+  function clicker() {
+  alert("Buyurtmangiz tez orada tayyor boladi!");
+  }
 }
 // alert("Tabga kora tanlang");
 getPrice();
-
-function clicker() {
-alert("Buyurtmangiz tez orada tayyor boladi!");
-}
+// function clicker() {
+//   alert("Buyurtmangiz tez orada tayyor boladi!");
+//   }
