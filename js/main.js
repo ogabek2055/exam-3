@@ -52,6 +52,6 @@ function getPrice() {
 }
 // alert("Tabga kora tanlang");
 getPrice();
-// function clicker() {
-//   alert("Buyurtmangiz tez orada tayyor boladi!");
-//   }
+function clicker() {
+  alert("Buyurtmangiz tez orada tayyor boladi!");
+  }
